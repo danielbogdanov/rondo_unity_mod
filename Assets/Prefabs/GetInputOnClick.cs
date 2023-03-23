@@ -18,7 +18,7 @@ public class GetInputOnClick : MonoBehaviour
     public void GetInputOnClickHandler()
     {
         Dictionary<string,object> attributes = new Dictionary<string, object>();
-        attributes.Add("email_address",inputUser.text);
+        attributes.Add("email",inputUser.text);
         Debug.Log("Log Input: " + inputUser.text );
         Leanplum.SetUserAttributes(attributes);
 
